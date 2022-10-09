@@ -1,6 +1,8 @@
 const { MongoClient } = require("mongodb");
-const Db = process.env.ATLAS_URI || "mongodb+srv://code-spot:UwR7OC5eskgZDxG8@cluster0.bb6aqkq.mongodb.net/?retryWrites=true&w=majority";
+const Db = process.env.ATLAS_URI || "mongodb+srv://vercel-admin-user:1WZmkA08qLXpa165@cluster0.fzdi6.mongodb.net/?retryWrites=true&w=majority";
+// mongodb+srv://code-spot:UwR7OC5eskgZDxG8@cluster0.bb6aqkq.mongodb.net/?retryWrites=true&w=majority
 
+// mongodb+srv://vercel-admin-user:1WZmkA08qLXpa165@cluster0.fzdi6.mongodb.net/?retryWrites=true&w=majority
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -19,6 +21,7 @@ module.exports = {
       return callback(err);
     });
   },
+  // mongoose.connect("mongodb+srv://vismay:Tanvi8758116124@cluster0.ikpvs.mongodb.net/vismayecommerce?authSource=admin&replicaSet=atlas-ovspe7-shard-0&readPreference=primary&ssl=true",{useNewUrlParser:true})
 
   getDb: function () {
     return _db;
