@@ -11,19 +11,18 @@ app.get('/', async (req, res) => {
     res.json({
         message: "Run Success",
         data: peers
-    });    
+    });
 });
 
 // app.get("/", async (req, res) => {
 //     dbo.mongoose.connect(dbo.url, {
 //         useNewUrlParser: true,
 //         useUnifiedTopology: true
-//     })
-//         .then(() => {
-//             res.json({ message: "MongoDB Connection Successfully" })
-//         }).catch(err => {
-//             res.json({ message: "MongoDB Connection Fail", error: err })
-//         });
+//     }).then(() => {
+//         res.json({ message: "MongoDB Connection Successfully" })
+//     }).catch(err => {
+//         res.json({ message: "MongoDB Connection Fail", error: err })
+//     });
 // });
 
 app.use(require("./routes/rooms"));
