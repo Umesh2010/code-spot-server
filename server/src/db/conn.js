@@ -1,5 +1,5 @@
 const { MongoClient } = require("mongodb");
-const Db = process.env.ATLAS_URI || "mongodb+srv://vercel-admin-user:1WZmkA08qLXpa165@cluster0.fzdi6.mongodb.net/?retryWrites=true&w=majority";
+const Db = "mongodb+srv://vercel-admin-user:1WZmkA08qLXpa165@cluster0.fzdi6.mongodb.net/?retryWrites=true&w=majority";
 // mongodb+srv://code-spot:UwR7OC5eskgZDxG8@cluster0.bb6aqkq.mongodb.net/?retryWrites=true&w=majority
 
 // mongodb+srv://vercel-admin-user:1WZmkA08qLXpa165@cluster0.fzdi6.mongodb.net/?retryWrites=true&w=majority
