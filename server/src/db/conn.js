@@ -25,8 +25,8 @@ module.exports = {
       if (db) {
         _db = db.db("spot");
         console.log("Successfully connected to MongoDB.");
+        return _db;
       }      
     });
-    return _db;
   },
 };
