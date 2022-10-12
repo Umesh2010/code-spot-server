@@ -20,7 +20,7 @@ dbo.connectToServer(async function (err) {
     console.log(err);
   }
   else {
-    console.log("connect success");
+    console.log("connect successfuly");
   }
 });
 // });
